@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     file_put_contents("comments.txt", "<p>" . $comment . "</p>\n", FILE_APPEND);
 
     // Weiterleitung zurück zur Kommentar-Seite
-    header("Location: index.php");
+    header("Location: persistent.php");
     exit();
 }
 ?>

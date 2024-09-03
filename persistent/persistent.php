@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Stored XSS Demo</title>
+    <style>
+        .comment-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            max-width: 500px;
+        }
+        .comment-box strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
 <a href="http://localhost:63342/xss-demo/index.html?_ijt=r5n7pshl6hp644afd7vf2uaki9&_ij_reload=RELOAD_ON_SAVE">
@@ -19,12 +33,18 @@
 
 <h2>Kommentare:</h2>
 <div id="comments">
-    <!-- Hier werden Kommentare angezeigt -->
     <?php
     if (file_exists("comments.txt")) {
-        echo file_get_contents("comments.txt");
+        $comments = file("comments.txt", FILE_IGNORE_NEW_LINES);
+        foreach ($comments as $index => $comment) {
+            $comment_num = $index + 1;
+            echo "<div class='comment-box'><strong>Kommentar $comment_num:</strong> $comment</div>";
+        }
     }
     ?>
 </div>
+<form method="post" action="delete_comments.php">
+    <input type="submit" value="Kommentare löschen">
+</form>
 </body>
 </html>

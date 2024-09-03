@@ -21,10 +21,8 @@
 
 <script>
     document.getElementById('displayButton').addEventListener('click', function() {
-        // Holen des Benutzereingabewerts
         var userInput = document.getElementById('userInput').value;
 
-        // Unsichere Art der Anzeige der Benutzereingabe
         document.getElementById('result').innerHTML = userInput;
     });
 </script>

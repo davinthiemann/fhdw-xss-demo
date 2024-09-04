@@ -5,6 +5,11 @@
     <title>DOM-Based XSS Demo</title>
 </head>
 <body>
+<a href="../index.html">
+    <button>
+        zur Übersicht
+    </button>
+</a>
 <h1>DOM-Based XSS</h1>
 <p>Gib ein Bild ein, das du anzeigen willst: </p>
 

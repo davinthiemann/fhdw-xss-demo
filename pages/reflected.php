@@ -5,7 +5,7 @@
     <title>Reflected XSS Demo</title>
 </head>
 <body>
-<a href="http://localhost:63342/xss-demo/index.html?_ijt=r5n7pshl6hp644afd7vf2uaki9&_ij_reload=RELOAD_ON_SAVE">
+<a href="../index.html">
     <button>
         zur Übersicht
     </button>

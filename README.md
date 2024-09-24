@@ -37,6 +37,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -90,13 +91,11 @@ Feel free to experiment with these examples.
 
 
 ```javascript
-// Nutzen dieses Skript um zu zeigen das js ausgeführt werden kann
+// Use this script to demonstrate that JavaScript can be executed
 alert('xss');
 ```
 
 <!-- CONTACT -->
 ## Contact
 
-Davin Thiemann - davin.thiemann@gmail.com
-
-Project Link: [https://github.com/davinthiemann/fhdw-xss-demo](https://github.com/davinthiemann/fhdw-xss-demo)
+[Davin Thiemann](https://davin-thiemann.de/) - davin.thiemann@gmail.com

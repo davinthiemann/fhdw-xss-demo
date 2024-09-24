@@ -71,11 +71,10 @@ exploiting XSS vulnerabilities.
    ```sh
    npm install
    ```
-3. Change to server.js
+3. Start server
    ```sh
-   cd server.js
+   php -S localhost:8000
    ```
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -88,6 +87,12 @@ Once you have started the localhost, you can choose between three XSS examples:
 
 Feel free to experiment with these examples.
 
+
+
+```javascript
+// Nutzen dieses Skript um zu zeigen das js ausgeführt werden kann
+alert('xss');
+```
 
 <!-- CONTACT -->
 ## Contact
